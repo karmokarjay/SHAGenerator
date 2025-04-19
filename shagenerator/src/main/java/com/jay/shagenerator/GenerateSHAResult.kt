@@ -1,30 +1,15 @@
-package com.salespro.shagenerator
+package com.jay.shagenerator
 
 import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
-import android.os.Bundle
 import android.util.Base64
 import android.util.Log
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.jay.shagenerator.GenerateSHAResult
 import java.security.MessageDigest
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+object GenerateSHAResult {
 
-
-        val getSignature=  GenerateSHAResult.getAppSignatureSHA256(this)
-//        val getSignature=getAppSignatureSHA256(this)
-        Log.d("Signature:: ","$getSignature")
-    }
-
-   /* fun getAppSignatureSHA256(context: Context): String? {
+    fun getAppSignatureSHA256(context: Context): String? {
         return try {
             val packageName = context.packageName
             val packageManager = context.packageManager
@@ -50,5 +35,5 @@ class MainActivity : AppCompatActivity() {
             Log.e("SHA256", "Error getting SHA-256", e)
             null
         }
-    }*/
+    }
 }

@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ShaGenerator"
 include(":app")
- 
+include(":shagenerator")
