@@ -7,7 +7,7 @@ import android.util.Base64
 import android.util.Log
 import java.security.MessageDigest
 
-class GenerateSHAResult {
+object GenerateSHAResult {
 
     fun getAppSignatureSHA256(context: Context): String? {
         return try {

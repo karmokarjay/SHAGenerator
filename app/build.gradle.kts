@@ -48,5 +48,7 @@ dependencies {
 
 //    project(":shagenerator")
 
-    implementation(project(":shagenerator"))
+//    implementation(project(":shagenerator"))
+
+    implementation(libs.shagenerator)
 }
